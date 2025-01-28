@@ -1,0 +1,132 @@
+/* General styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    margin-left: 40%;
+    min-height: 100vh;
+    background-color: black;
+    color: white;
+    zoom: 1;
+    font-size: larger;
+}
+
+header h1 {
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+/* Main container */
+main {
+    width: 100%;
+    max-width: 400px;
+    padding: 15px;
+    background-color: black;
+    border-radius: none;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Form styles */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+hr {
+    border: 1px solid white;
+}
+
+.allInputs {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: black;
+    color: white;
+    outline: none;
+}
+
+::placeholder {
+    color: white;
+    font-size: larger;
+}
+
+/* Radio and checkbox */
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+/* Button styles */
+button {
+    width: 30%;
+    padding: 10px;
+    border: none;
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Footer */
+footer {
+    margin-top: 10px;
+    margin-left: 160px;
+    font-size: 0.7rem;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+    body {
+        margin-left: 20%;
+    }
+    header h1 {
+        font-size: 2.5rem;
+    }
+    main {
+        max-width: 90%;
+        padding: 10px;
+    }
+    .allInputs {
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+    button {
+        width: 50%;
+        padding: 8px;
+    }
+    footer {
+        margin-left: 50px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        margin-left: 10%;
+    }
+    header h1 {
+        font-size: 2rem;
+    }
+    main {
+        max-width: 100%;
+        padding: 10px;
+    }
+    .allInputs {
+        font-size: 0.8rem;
+        padding: 6px;
+    }
+    button {
+        width: 60%;
+        padding: 7px;
+    }
+    footer {
+        margin-left: 0;
+        text-align: center;
+    }
+}

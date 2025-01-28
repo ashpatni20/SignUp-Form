@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SignUp Form</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div>
+        <h1>Sign Up</h1>
+      </div>
+    </header>
+    <main>
+      <form>
+        <div>
+          <input
+            class="allInputs"
+            id="name"
+            type="text"
+            placeholder="Name"
+            required
+          />
+          <hr />
+        </div>
+        <div>
+          <input
+            class="allInputs"
+            id="email"
+            type="email"
+            placeholder="Email"
+            required
+          />
+          <hr />
+        </div>
+        <div>
+          <input
+            class="allInputs"
+            id="password"
+            type="password"
+            placeholder="Password"
+            required
+          />
+          <hr />
+        </div>
+        <div>
+          <input
+            class="allInputs"
+            id="confirmPassword"
+            type="text"
+            placeholder="Confirm password"
+            required
+          />
+          <hr />
+        </div>
+        <div>
+          <input
+            class="allInputs"
+            id="date"
+            type="date"
+            placeholder=""
+            required
+          />
+          <hr />
+        </div>
+        <div>
+          <input type="radio" name="occupation" id="occup_Stud" />
+          <label for="occup_Stud">Student</label>
+          <input type="radio" name="occupation" id="occup_emp" />
+          <label for="occup_emp" name="">Employee</label>
+        </div>
+        <div>
+          <input type="checkbox" id="termsnconditions" />
+          <label> I agree to all the Terms and conditions</label>
+        </div>
+        <button type="submit" onclick="validationForm()">SignUp</button>
+      </form>
+    </main>
+    <footer>
+      <p>Made with 💌 by Ash</p>
+    </footer>
+  </body>
+</html>
